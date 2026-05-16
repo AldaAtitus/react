@@ -5,11 +5,12 @@ function App() {
   // descontruição de array
   const [userState, setUserState] = useState(false);
   // Neste momento, usertState é false
+  // Como fazer funcionar ?
   /*
   setTimeout(function() {
     setUserState(true);
   }, 5000);
   */
-  return <Hello isLogged={userState} username="Aldacir" />;
+  return <Hello isLogged={userState} username="Aldacir" setUserState={setUserState} />;
 }
 export default App
